@@ -65,16 +65,17 @@ export const logout = async () => {
 
 export const getUser = async () => {
   try {
-    const response = await account.get();
+    // TODO when auth is fixed, uncomment this
+    // const response = await account.get();
 
-    if (response.$id) {
-      const userAvatar = avatar.getInitials(response.name);
+    // if (response.$id) {
+    //   const userAvatar = avatar.getInitials(response.name);
 
-      return {
-        ...response,
-        avatar: userAvatar.toString(),
-      };
-    }
+    //   return {
+    //     ...response,
+    //     avatar: userAvatar.toString(),
+    //   };
+    // }
 
     return null;
   } catch (error) {

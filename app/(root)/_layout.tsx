@@ -14,7 +14,8 @@ export default function AppLayout() {
     );
   }
 
-  if (!isLoggedIn) return <Redirect href="/sign-in" />;
+  // TODO when auth is fixed, uncomment this
+  //if (!isLoggedIn) return <Redirect href="/sign-in" />;
 
   return <Slot />;
 }
